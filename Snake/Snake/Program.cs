@@ -15,7 +15,28 @@ namespace Snake
 
             Point p2 = new Point(4, 5, 'o');
             p2.Drow();
-                            
+
+            List<char> SYM = new List<char>();
+            SYM.Add('@');
+            SYM.Add('&');
+            SYM.Add('/');
+
+            char x = SYM[1];
+            Console.Write(x);
+
+            foreach (char i in SYM)
+            {
+                Console.WriteLine( i );
+            }
+
+            SYM.RemoveAt(2);
+           
+
+            List<Point> PL = new List<Point>();
+            PL.Add(p1);
+            PL.Add(p2);
+
+
            Console.ReadLine();
         }               
     }
