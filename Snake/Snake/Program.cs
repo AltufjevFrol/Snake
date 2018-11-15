@@ -10,17 +10,22 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point(1, 3, '-');
-            p1.Drow();
+            Console.SetWindowSize(90, 30);
+            Console.SetBufferSize(90, 30);
+            // Отрисовка рамки
+            HLine upline = new HLine(2, 88, 2, '-');
+            HLine downline = new HLine(2, 88, 28, '-');
+            VLine leftline = new VLine(1, 29, 1, '|');
+            VLine rightline = new VLine(1, 29, 89, '|');
+            upline.Drow();
+            downline.Drow();
+            leftline.Drow();
+            rightline.Drow();
 
-            Point p2 = new Point(4, 5, 'o');
-            p2.Drow();
 
-            HLine lineH = new HLine(0, 30, 10, '|');
-            lineH.Drow();
 
-            VLine lineV = new VLine(11, 41, 30, '-');
-            lineV.Drow();
+
+
 
 
 

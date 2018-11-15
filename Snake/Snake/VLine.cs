@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    class VLine
+    class VLine : Figure
     {
-        List<Point> pList;
-
+        
         public VLine(int yH, int yL, int x, char sym)
         {
             pList = new List<Point>();
@@ -20,13 +19,6 @@ namespace Snake
             }
         }
 
-        public void Drow()
-        {
-            foreach (Point p in pList)
-            {
-                p.Drow();
-
-            }
-        }
+        
     }
 }
