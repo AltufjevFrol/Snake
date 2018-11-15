@@ -16,7 +16,7 @@ namespace Snake
             Point p2 = new Point(4, 5, 'o');
             p2.Drow();
 
-            HLine line = new HLine();
+            HLine line = new HLine(0, 30, 10, '|');
             line.Drow();
 
 
