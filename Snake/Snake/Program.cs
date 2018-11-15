@@ -16,12 +16,15 @@ namespace Snake
             Point p2 = new Point(4, 5, 'o');
             p2.Drow();
 
-            HLine line = new HLine(0, 30, 10, '|');
-            line.Drow();
+            HLine lineH = new HLine(0, 30, 10, '|');
+            lineH.Drow();
+
+            VLine lineV = new VLine(11, 41, 30, '-');
+            lineV.Drow();
 
 
-           
-           Console.ReadLine();
+
+            Console.ReadLine();
         }               
     }
 }
