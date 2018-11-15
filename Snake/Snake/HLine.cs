@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    class HLine
+    class HLine : Figure
     {
-        List<Point> pList;
 
         public HLine(int xL, int xR, int y, char sym)
         {
@@ -20,14 +19,7 @@ namespace Snake
             }
         }
 
-        public void Drow()
-        {
-            foreach(Point p in pList)
-            {
-                p.Drow();
-
-            }
-        }
+        
 
     }
 }
