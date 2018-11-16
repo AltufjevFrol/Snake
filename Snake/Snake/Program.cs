@@ -25,8 +25,19 @@ namespace Snake
             Point p = new Point(4, 5, 'o');
             Snake snake = new Snake(p, 4, Direction.RIGHT);
             snake.Drow();
-
-
+            snake.Move();
+            ThreadStaticAttribute.Sleep(300);
+            snake.Move();
+            ThreadStaticAttribute.Sleep(300);
+            snake.Move();
+            ThreadStaticAttribute.Sleep(300);
+            snake.Move();
+            ThreadStaticAttribute.Sleep(300);
+            snake.Move();
+            ThreadStaticAttribute.Sleep(300);
+            snake.Move();
+            ThreadStaticAttribute.Sleep(300);
+            snake.Move();
 
 
 
